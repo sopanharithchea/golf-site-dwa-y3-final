@@ -20,3 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/about')->name('about');
+Route::get('/video')->name('video');
+Route::get('/reservation', function(){return view('pages.reservation');})->name('reservation');
+Route::get('/image')->name('image');
+Route::get('/contact')->name('contact');
