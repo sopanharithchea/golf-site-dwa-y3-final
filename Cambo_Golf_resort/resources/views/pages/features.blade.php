@@ -8,12 +8,12 @@
 
             <div class="col-sm-12">
 
-                <h2>Services</h2>
+                <h2>Features</h2>
 
                 <div class="ber_link text-center">
 
                     <p> <i class="fa fa-angle-double-right"></i> <a href="index.html">Home</a> / <a
-                            href="service.html">Services</a> <i class="fa fa-angle-double-left"></i> </p>
+                            href="service.html">Features</a> <i class="fa fa-angle-double-left"></i> </p>
 
                 </div>
 
@@ -152,7 +152,7 @@
 
         <div class="row">
 
-            <h2>More Services</h2>
+            <h2>More Features</h2>
 
             <div class="wpm_border center-block"> <i class="fa fa-star-half-o"></i> </div>
 

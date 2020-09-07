@@ -8,12 +8,12 @@
 
             <div class="col-sm-12">
 
-                <h2>Blog</h2>
+                <h2>News</h2>
 
                 <div class="ber_link text-center">
 
                     <p> <i class="fa fa-angle-double-right"></i> <a href="{{ route('home') }}">Home</a> / <a
-                            href="{{ route('news')}}">Blog</a> <i class="fa fa-angle-double-left"></i> </p>
+                            href="{{ route('news')}}">News</a> <i class="fa fa-angle-double-left"></i> </p>
 
                 </div>
 
