@@ -1,0 +1,43 @@
+/* Tablet Layout: 768px. */
+
+@media (max-width: 768px), only screen and (max-device-width: 768px) {
+.wpm_mobile_center{  float:none; text-align:center; }
+.wpm_header{ min-height:80px; }
+.wpm_menu li a{ padding:10px 10px; }
+.navbar-toggle{ margin-top:15px; margin-bottom:15px; }
+.navbar-collapse{ margin-top:20px; }
+.wpm_logo{ margin-top:8px;}
+.navbar{ min-height: 0px; }
+
+
+.border_bottom{ border: none; }
+.border_left_right{ border: none; }
+
+
+
+}
+
+
+
+@media (max-width: 480px), only screen and (max-device-width: 480px) {
+
+.carousel-control.right{ top: 42%; font-size: 32px; }	
+.carousel-control.left{ top: 42%; font-size: 32px; }	
+
+
+.wpm_welcome_area h5 a{ display:block; }
+.tp-caption h3{padding-bottom:0px; font-size:28px;}
+
+
+
+}
+
+
+@media (max-width: 320px), only screen and (max-device-width: 320px) {
+.carousel-control.right{ top: 42%; font-size: 18px; }	
+.carousel-control.left{ top: 42%; font-size: 18px; }
+	
+.tp-caption h3{ display:none;}	
+.view-tenth h2{  margin: 5px 40px 0px 40px !important;}
+
+}
