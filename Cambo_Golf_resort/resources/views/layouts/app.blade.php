@@ -88,7 +88,7 @@
                             </ul>
                         </li>
 
-                        <li><a href="service.html">Services</a></li>
+                        <li><a href="{{url('service')}}">Services</a></li>
                         <li><a href="{{ route('reservation') }}">Reservation</a> </li>
 
 
@@ -200,7 +200,7 @@
                 <div class="wpm_footer_menu wpm_mobile_center">
 
                     <a href="home.html">Home</a>
-                    <a href="service.html">Services</a>
+                    <a href="{{url('service')}}">Services</a>
                     <a href="blog.html">Baog</a>
                     <a href="contact.html">Contact Us</a>
 

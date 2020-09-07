@@ -25,3 +25,4 @@ Route::get('/video')->name('video');
 Route::get('/reservation', function(){return view('pages.reservation');})->name('reservation');
 Route::get('/image')->name('image');
 Route::get('/contact')->name('contact');
+Route::get('/service', function(){return view('pages.service');})->name('service');

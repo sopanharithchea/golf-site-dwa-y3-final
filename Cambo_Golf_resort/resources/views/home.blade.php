@@ -2,8 +2,6 @@
 
 @section('content')
 <section class="wpm_slider_area">
-
-
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
 
