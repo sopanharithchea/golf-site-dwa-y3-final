@@ -18,13 +18,11 @@
   <link href="{{asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
   <link rel="stylesheet" href="{{asset('/css/home-admin.css')}}">
 
-  <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-
   <link rel="stylesheet" href="{{asset('css/jquery.dataTables.min.css')}} ">
 
   <script src="{{asset('js/jquery.min.js')}}"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="{{asset('js/jquery-3.3.1.js')}}"></script>
+
 </head>
  @auth
 <body id="page-top">
@@ -40,7 +38,7 @@
         <div class="sidebar-brand-icon">
        <i class="fas fa-user-shield"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Vattanac</div>
+        <div class="sidebar-brand-text mx-3">Cambo Golf</div>
       </a>
 
       <!-- Divider -->
@@ -162,7 +160,7 @@
 <!-- Nav Item - User -->
       <li class="nav-item">
 @endif
-        <a class="nav-link" href="{{route('users.index')}}">
+        <a class="nav-link">
          <i class="fas fa-users"></i>
           <span>User Managent</span></a>
       </li>

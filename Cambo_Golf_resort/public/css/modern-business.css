@@ -1,0 +1,449 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+ 
+ body {
+  padding-top: 56px;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 500px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.portfolio-item {
+  margin-bottom: 30px;
+}
+.nav-link{
+  padding-top:25px !important;
+  padding-bottom: 25px !important;
+  
+  font-size:15px;
+  line-height:14px;
+  letter-spacing: 2px;
+  word-spacing: 0px;
+  font-weight: 600;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+  text-decoration: none solid rgb(136,197,66);
+  text-indent: 0px;
+}
+naf-lind:hover{
+  color:#b7fab4 !important;
+
+}
+.navbar{
+  background-color:#007b5e;
+}
+
+.dropdown-item:hover{
+  background: #007b5e !important;
+}
+.dropdown-item{
+
+  font-size:15px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  
+}
+.dropdown-menu{
+  margin-top:-5px !important;
+}
+  .navbar-brand{
+    margin-left:10% !important;
+    font-family: Sans-serif; 
+    font-size:16px;
+    line-height:14px;
+    letter-spacing: 2px;
+    word-spacing: 0px;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    text-decoration: none solid rgb(136,197,66);
+    text-indent: 0px;
+  }
+    .coach{
+      border-radius: 5px;
+    }
+   
+    .logo{
+      height:70px;
+    }
+    .main-textPage{
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    h2{
+      font-family: inherit !important;
+      font-weight: 200;
+      font-style: normal;
+      font-size: 35px;
+      line-height: 1.1em;
+      letter-spacing: 0px;
+      text-transform: none;
+    }
+    .pri-col h4,.pri-col p,.card-title,.map h3,.map p,.quick-links a,.row h5{
+      font-family: inherit !important;
+      font-weight: 200;
+      font-style: normal;
+    }
+    .c-coach{
+      background:#f2f2f2 !important;
+    }
+    .ruller{
+      margin-bottom:50px !important;
+    }
+    .main-title{
+      margin-top:30px;
+    }
+    .sl{
+    font-family: inherit !important;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1.1em;
+    letter-spacing: 0px;
+    text-transform: none;
+    }
+    .carousel-caption p{
+    font-family: inherit !important;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 1.1em;
+    letter-spacing: 0px;
+    text-transform: none;
+    }
+
+    /* Iphone 5 */
+    @media (max-width:330px) and (min-width:200px) { 
+  /* STYLES GO HERE */
+      .carousel-inner{
+        margin-top:-25px;
+      }
+      html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+      .gr{
+        width: 281px !important;
+        height:133px !important;
+        margin-left:9px !important;
+       }
+       .btn-learn{
+         margin-bottom:40px !important;
+         margin-top:-30px;
+       }
+       iframe{
+        width: 283px;
+        height:350px;
+       }
+       h2{
+         font-size:20px !important;
+       }
+       .coach{
+        width: 298px;
+        height:210px;
+        border-radius: 5px;
+        margin-top:50px;
+       }
+       .pri-col{
+         margin-top:40px !important;
+       }
+       .navbar-brand{
+        font-size: 11px !important;
+       }
+      .nav-link{
+        paDding-top:10px !important;
+        padding-bottom: 10px !important;
+      }
+      .row{
+        margin-left:-20px !important;
+        width:330px !important;
+      }
+      .image{
+        width:300px !important;
+      }
+      .dropdown-item{
+        background: white;
+      }
+      .c-coach{
+        background:white !important;
+      }
+      .ck{
+        margin-left:-15px !important;
+      }
+      .video-spe{
+        margin-left:-20px !important;
+      }
+    
+    }
+    /* Iphone 6 and Asus zenfone max pro m2 And vivo*/
+      @media (max-width:370px) and (min-width:331px) {
+        html, body {
+          max-width: 100%;
+          overflow-x: hidden;
+      }
+        .carousel-item {
+          height: 45vh;
+          min-height:270px !important;
+        }
+        h2{
+          font-size: 25px !important;
+        }
+        .main-textPage{
+          font-size: 25px;
+        }
+        .logo{
+          margin-right:0px;
+          height:60px;
+          position: static;
+          padding-top:-5px !important;
+          padding-bottom: -5px !important;
+        }
+        .navbar-brand{
+          margin-right:20px !important;
+          font-size: 12px !important;
+          letter-spacing: 0px;
+        }
+        .carousel-inner{
+          margin-top:-25px;
+        }
+        .gr{
+         
+          width: 323px !important;
+          height:183px !important;
+          align-content: center;
+         }
+         .btn-learn{
+           margin-bottom:40px !important;
+           margin-top:-30px;
+         }
+         iframe,.map{
+           
+          width: 315px;
+          height:350px;
+         }
+         .coach{
+          width: 320px;
+          height:210px;
+          border-radius: 5px;
+          margin-top:50px;
+         }
+         .pri-col{
+           margin-top:40px !important;
+         }
+         .navbar-brand{
+          font-size: 13px !important;
+         }
+        .nav-link{
+          paDding-top:10px !important;
+          padding-bottom: 10px !important;
+        }
+        .row{
+          margin-left:-12px !important;
+          width:352px !important;
+        }
+        .ck{
+          margin-left:-15px !important;
+        }
+        .video-spe{
+          margin-left:-20px !important;
+        }
+        .images{
+          width: 323px !important;
+        }
+        .dropdown-item{
+          background: white !important;
+          color:black !important;
+        }
+        .dropdown-item:hover{
+          background: #cccc !important;
+        }
+      
+        .c-coach{
+          background:white !important;
+        }
+        .roller2{
+          margin-bottom:-30px !important;
+        }
+    }
+      /* Iphone 6 plus*/
+      @media (max-width:380px) and (min-width:370px) {
+        html, body {
+          max-width: 100%;
+          overflow-x: hidden;
+      }
+        .dropdown-item{
+          background: white !important;
+        }
+        .carousel-item {
+          height: 45vh;
+          min-height:270px !important;
+        }
+        h2{
+          font-size: 25px !important;
+        }
+        .logo{
+          margin-right:0px;
+          height:60px;
+          position: static;
+          padding-top:-5px !important;
+          padding-bottom: -5px !important;
+        }
+        .navbar-brand{
+          margin-right:20px !important;
+          font-size: 12px !important;
+          letter-spacing: 0px;
+        }
+        .carousel-inner{
+          margin-top:-25px;
+        }
+        .gr{
+         
+          width: 323px !important;
+          height:183px !important;
+          align-content: center;
+         }
+         .btn-learn{
+           margin-bottom:40px !important;
+           margin-top:-30px;
+         }
+         iframe,.map{
+          width: 315px;
+          height:350px;
+         }
+         .coach{
+          width: 329px;
+          height:210px;
+          border-radius: 5px;
+         }
+         .card-spe4{
+          margin-top:25px;
+        }
+         .pri-col{
+           margin-top:40px !important;
+         }
+         .navbar-brand{
+          font-size: 13px !important;
+         }
+        .nav-link{
+          paDding-top:10px !important;
+          padding-bottom: 10px !important;
+        }
+        .row{
+          margin-left:-4px !important;
+          width:359px !important;
+        }
+        .ck{
+          margin-left:-15px !important;
+        }
+        .video-spe{
+          margin-left:-23px !important;
+        }
+      }
+      /* My phone */
+      @media (max-width:415px) and (min-width:380px) {
+          html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+          .dropdown-item{
+            background: white !important;
+          }
+          .carousel-item {
+            height: 45vh;
+            min-height:270px !important;
+          }
+          h2{
+            font-size: 25px !important;
+          }
+          .logo{
+            margin-right:0px;
+            height:60px;
+            position: static;
+            padding-top:-5px !important;
+            padding-bottom: -5px !important;
+          }
+          .navbar-brand{
+            margin-right:20px !important;
+            font-size: 12px !important;
+            letter-spacing: 0px;
+          }
+          .carousel-inner{
+            margin-top:-25px;
+          }
+          .gr{
+            width: 360px !important;
+            height:203px !important;
+            align-content: center;
+           }
+           .btn-learn{
+             margin-bottom:40px !important;
+             margin-top:-30px;
+           }
+           iframe,.map{
+            width: 350px;
+            height:380px;
+           }
+           .card-spe4{
+             margin-top:25px;
+           }
+           .coach{
+            width: 357px;
+            height:210px;
+            border-radius: 5px;
+           }
+           .pri-col{
+             margin-top:40px !important;
+           }
+           .navbar-brand{
+            font-size: 13px !important;
+           }
+          .nav-link{
+            paDding-top:10px !important;
+            padding-bottom: 10px !important;
+          }
+          .row{
+            margin-left:-4px !important;
+            width:387px !important;
+          }
+          .ck{
+            margin-left:-15px !important;
+          }
+          .video-spe{
+            margin-left:-25px !important;
+          }
+        }
+      @media only screen and (max-width: 1000px) {
+        .carousel-inner{
+          margin-top:-25px;
+        }
+        .dropdown-manu{
+          background-color: #cccc !important;
+        }
+        .dropdown-item{
+          text-align: center !important;
+        }
+        .computer{
+          display: none !important;
+        }
+      }
+      @media only screen and (min-width: 960px) {
+        .mobile{
+          display: none !important;
+        }
+      }
+      
+      text-decoration:none !important;
+      
