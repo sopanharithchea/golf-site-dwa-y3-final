@@ -144,10 +144,10 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="{{url('short-gamectr')}}">Improving short game</a>
-            <a class="collapse-item" href="{{url('golf-slicectr')}}">Improving golf slice</a>
-            <a class="collapse-item" href="{{url('golf-servectr')}}">Improving serve</a>
-            <a class="collapse-item" href="{{url('servicectr')}}">service details</a>
+          <a class="collapse-item" href="{{url('/services/create')}}">Create</a>
+            <a class="collapse-item" href="{{url('/services/edit')}}">Edit</a>
+            <a class="collapse-item" href="{{url('/services/index')}}">Index</a>
+            <!-- <a class="collapse-item" href="{{url('servicectr')}}">service details</a> -->
 
           </div>
         </div>

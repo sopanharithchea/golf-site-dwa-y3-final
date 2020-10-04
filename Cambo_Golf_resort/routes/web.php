@@ -32,3 +32,21 @@ Route::get('/service', function(){return view('pages.service');})->name('service
 Route::get('/contact', function(){return view('pages.contact');})->name('contact');
 Route::get('/features', function(){return view('pages.features');})->name('features');
 Route::get('/slide', function(){return view('pages.slideTable');})->name('slideTable');
+
+
+
+//Services
+Route::get('services/index', 'ServicesController@index');
+Route::get('services/create','ServicesController@create');
+Route::get('services/delete','ServicesController@delete');
+Route::get('services/edit/{id}', 'ServicesController@edit');
+Route::post('services/save','ServicesController@save');
+Route::post('services/update','ServicesController@save');
+
+//Services_category
+Route::get('services_category/index', 'ServicesContactController@index');
+Route::get('services_category/create','ServicesContactController@create');
+Route::get('services_category/delete','ServicesContactController@delete');
+Route::get('services_category/edit/{id}', 'ServicesContactController@edit');
+Route::post('services_category/save','ServicesContactController@save');
+Route::post('services_category/update','ServicesContactController@save');
