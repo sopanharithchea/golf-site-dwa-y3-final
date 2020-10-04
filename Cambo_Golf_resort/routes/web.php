@@ -32,3 +32,4 @@ Route::get('/service', function(){return view('pages.service');})->name('service
 Route::get('/contact', function(){return view('pages.contact');})->name('contact');
 Route::get('/features', function(){return view('pages.features');})->name('features');
 Route::get('/slide', function(){return view('pages.slideTable');})->name('slideTable');
+Route::resource('/slide', 'slideController'); 
