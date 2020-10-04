@@ -1,0 +1,24 @@
+@media only screen and (max-width: 600px) {
+    .video{
+       width: 330px !important;
+     }
+      .imageModal{
+      width: 300px !important;
+     }
+  }
+@media only screen and (max-width: 450px) {
+    .video{
+       width: 275px !important;
+       height: 200px !important;
+     } 
+  }
+@media only screen and (max-width: 700px) {
+    .video{
+       width: 335px !important;
+     } 
+  }
+@media only screen and (max-width: 800px) {
+    .video{
+       width: 370px !important;
+     } 
+  }

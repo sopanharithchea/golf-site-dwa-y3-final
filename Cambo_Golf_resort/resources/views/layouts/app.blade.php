@@ -11,21 +11,15 @@
     <title>{{ config('app.name', 'Cambodia Golf Resort') }}</title>
 
     <!-- Scripts -->
-    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{{asset('js/jquery.min.js')}}" defer></script>
-
-
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/responsive.css')}}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/app.css')  }}"> --}}
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')  }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css')  }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive.css')  }}">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.min.css')  }}">
 
 </head>
 
@@ -66,7 +60,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"> <img class="wpm_logo" src="images/logo/logo.png"
+                    <a class="navbar-brand" href="{{ route('home') }}"> <img class="wpm_logo" src="images/logo/logo.png"
                             alt=""></a>
                 </div>
 
@@ -85,23 +79,30 @@
                             </a>
                             <ul class="dropdown-menu" role="menu">
                             <li><a href="{{ route('about') }}">About us</a></li>
+                            <li><a href="{{ route('career') }}">Career Opportunity</a></li>
+                            <li><a href="{{ route('about') }}">About us</a></li>
+                            <li><a href="{{ route('about') }}">About us</a></li>
                             </ul>
                         </li>
 
+<<<<<<< HEAD
                         <li><a href="{{url('service')}}">Services</a></li>
+=======
+                        <li><a href="{{ route('service') }}">Services</a></li>
+>>>>>>> c9346c47b4e257a587f2d5669ef862615dd825ab
                         <li><a href="{{ route('reservation') }}">Reservation</a> </li>
 
 
-                        {{-- <li role="presentation" class="dropdown">
+                        <li role="presentation" class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                 aria-expanded="false">
-                                Blog <span class="caret"></span>
+                                News <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="blog.html">Blog Page</a></li>
-                                <li><a href="blogarticle.html">Blog Article</a></li>
+                            <li><a href="{{ route('news') }}">News Page</a></li>
+                                <li><a href="{{ route('article') }}">News Article</a></li>
                             </ul>
-                        </li> --}}
+                        </li>
 
 
                         <li><a href="{{route('contact')}}">Contact us</a> </li>

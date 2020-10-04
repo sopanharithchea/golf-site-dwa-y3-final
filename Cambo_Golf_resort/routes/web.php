@@ -20,9 +20,17 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/about')->name('about');
+Route::get('/about', function(){return view('pages.about');})->name('about');
+Route::get('/features', function(){return view('pages.features');})->name('features');
 Route::get('/video')->name('video');
-Route::get('/reservation', function(){return view('pages.reservation');})->name('reservation');
 Route::get('/image')->name('image');
 Route::get('/contact')->name('contact');
 Route::get('/service', function(){return view('pages.service');})->name('service');
+Route::get('/reservation', function(){return view('pages.reservation');})->name('reservation');
+Route::get('/career', function(){return view('pages.career');})->name('career');
+Route::get('/news', function(){return view('pages.news');})->name('news');
+Route::get('/article', function(){return view('pages.article');})->name('article');
+Route::get('/service', function(){return view('pages.service');})->name('service');
+Route::get('/contact', function(){return view('pages.contact');})->name('contact');
+Route::get('/features', function(){return view('pages.features');})->name('features');
+Route::get('/slide', function(){return view('pages.slideTable');})->name('slideTable');
