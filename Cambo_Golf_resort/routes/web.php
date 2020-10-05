@@ -32,6 +32,31 @@ Route::get('/service', function(){return view('pages.service');})->name('service
 Route::get('/contact', function(){return view('pages.contact');})->name('contact');
 Route::get('/features', function(){return view('pages.features');})->name('features');
 Route::get('/slide', function(){return view('pages.slideTable');})->name('slideTable');
+
+//Services
+Route::get('services/index', 'ServicesController@index');
+Route::get('services/create','ServicesController@create');
+Route::get('services/delete','ServicesController@delete');
+Route::get('services/edit/{id}', 'ServicesController@edit');
+Route::post('services/save','ServicesController@save');
+Route::post('services/update','ServicesController@update');
+
+//Services_category
+Route::get('services_category/index', 'ServicesCategoryController@index');
+Route::get('services_category/create','ServicesCategoryController@create');
+Route::get('services_category/delete','ServicesCategoryController@delete');
+Route::get('services_category/edit/{id}', 'ServicesCategoryController@edit');
+Route::post('services_category/save','ServicesCategoryController@save');
+Route::post('services_category/update','ServicesCategoryController@update');
+
+//Services_contact
+Route::get('services_contact/index', 'ServicesContactController@index');
+Route::get('services_contact/create','ServicesContactController@create');
+Route::get('services_contact/delete','ServicesContactController@delete');
+Route::get('services_contact/edit/{id}', 'ServicesContactController@edit');
+Route::post('services_contact/save','ServicesContactController@save');
+Route::post('services_contact/update','ServicesContactController@update');
+
 Route::GET('/categoryctr','pageController@showcategorycontroller');
 // cat
 Route::GET('/catvideoctr','pageController@showcatvideocontroller');
@@ -51,3 +76,4 @@ Route::resource('/image','imageController');
 Route::resource('/video','videoController');
 Route::resource('/categoryBackControl','categoryBackendController');
 Route::resource('/catvideoBackControl','catvideoBackendController');
+

@@ -4,8 +4,8 @@
 <div class="card card-gray">
   <div class="card-header">
     <div class="header-block">
-      <p class="title"> Services
-        <a href="{{url('services/create')}}"class="btn btn-primary-outline btn-oval btn-sm mx-left">
+      <p class="title"> Service Contact
+        <a href="{{url('services_contact/create')}}"class="btn btn-primary-outline btn-oval btn-sm mx-left">
             <i class="fa fa-plus-circle"></i> Create
         </a>
       </p>
@@ -29,7 +29,8 @@
         <thead class="flip-header">
           <tr>
                 <th>#</th>
-                <th>Title</th>
+                <th>Phone</th>
+                <th>Email</th>
                 <th>Description</th>
                 <th>Actions</th>
           </tr>
@@ -41,22 +42,23 @@
                     $pagex = 1;
                 $i = 22 * ($pagex - 1) + 1;
             ?>
-            @foreach($services as $sr)
+            @foreach($services_contact as $sr)
                 <tr>
                     <td>{{$i++}}</td>
                     <td>
                         <!-- <a href="{{url('services/detail/'.$sr->id)}}"> -->
-                        {{$sr->title}}
+                        {{$sr->phone}}
                         <!-- </a> -->
                     </td>
+                    <td>{{$sr->email}}</td>
                     <td>{{$sr->description}}</td>
                     
                     <td>
-                        <a href="{{url('services/delete?id='.$sr->id)}}" title="Delete" class='text-danger'
+                        <a href="{{url('services_contact/delete?id='.$sr->id)}}" title="Delete" class='text-danger'
                             onclick="return confirm('You want to delete?')">
                             <i class="fa fa-trash"></i>
                         </a>&nbsp;
-                        <a href="{{url('services/edit/'.$sr->id)}}" class="text-success" title="Edit">
+                        <a href="{{url('services_contact/edit/'.$sr->id)}}" class="text-success" title="Edit">
                             <i class="fa fa-edit"></i>
                         </a>
                     </td>
@@ -64,7 +66,7 @@
             @endforeach
         </tbody>
       </table>
-      {{$services->links()}}
+      {{$services_contact ->links()}}
     </div>
     
   </div>

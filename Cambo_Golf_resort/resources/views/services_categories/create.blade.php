@@ -1,14 +1,12 @@
 @extends('layouts.backend')
+
 @section('admin')
-
-
-
 
 <div class="card card-gray">
 	<div class="card-header">
 		<div class="header-block">
-			<p class="title"> Edit Service
-				<a href="{{url('services/index')}}"class="btn btn-primary-outline btn-oval btn-sm mx-left">
+			<p class="title"> Create Category
+				<a href="{{url('services_category/index')}}"class="btn btn-primary-outline btn-oval btn-sm mx-left">
                     <i class="fa fa-reply"></i> Back
                 </a>
 			</p>
@@ -50,29 +48,30 @@
                         </ul>
                     </div>
                 @endif
-                <form action="{{url('services/update')}}" method="POST">
-                    {{csrf_field()}}
-                    <input type="hidden" name="id" value="{{$r->id}}">
-                    <div class="form-group row">
-                        <label for="title" class="col-sm-3">Title <span class="text-danger">*</span></label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="title" name="title" 
-                                value="{{$r->title}}" required autofocus>
+                <form action="{{url('services_category/save')}}" method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-sm-8">
+                                {{csrf_field()}}
+                            <div class="form-group row">
+                                <label for="title" class="col-sm-4">Title<span class="text-danger">*</span></label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="title" name="title" 
+                                        value="{{old('title')}}" required autofocus>
+                                </div>
+                            </div>
+                            <!--  -->
+                            
+                            
+                            <div class="form-group row">
+                                <label class="col-sm-3">&nbsp;</label>
+                                <div class="col-sm-9">
+                                    <button class="btn btn-primary btn-oval">
+                                        <i class="fa fa-save"></i> Save
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="description" class="col-sm-3"> Description</label>
-                        <div class="col-sm-9">
-                            <textarea name="description" class="form-control" id="description" cols="30" rows="10">{{$r->description}}</textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-3">&nbsp;</label>
-                        <div class="col-sm-9">
-                            <button class="btn btn-primary btn-oval">
-                                <i class="fa fa-save"></i> Save
-                            </button>
-                        </div>
+
                     </div>
                 </form>
             </div>
@@ -81,3 +80,4 @@
 </div>
 
 @endsection
+

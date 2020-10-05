@@ -1,14 +1,11 @@
 @extends('layouts.backend')
 @section('admin')
 
-
-
-
 <div class="card card-gray">
 	<div class="card-header">
 		<div class="header-block">
 			<p class="title"> Edit Service
-				<a href="{{url('services/index')}}"class="btn btn-primary-outline btn-oval btn-sm mx-left">
+				<a href="{{url('services_category/index')}}"class="btn btn-primary-outline btn-oval btn-sm mx-left">
                     <i class="fa fa-reply"></i> Back
                 </a>
 			</p>
@@ -50,7 +47,7 @@
                         </ul>
                     </div>
                 @endif
-                <form action="{{url('services/update')}}" method="POST">
+                <form action="{{url('services_category/update')}}" method="POST">
                     {{csrf_field()}}
                     <input type="hidden" name="id" value="{{$r->id}}">
                     <div class="form-group row">
@@ -60,12 +57,7 @@
                                 value="{{$r->title}}" required autofocus>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="description" class="col-sm-3"> Description</label>
-                        <div class="col-sm-9">
-                            <textarea name="description" class="form-control" id="description" cols="30" rows="10">{{$r->description}}</textarea>
-                        </div>
-                    </div>
+                    
                     <div class="form-group row">
                         <label class="col-sm-3">&nbsp;</label>
                         <div class="col-sm-9">
