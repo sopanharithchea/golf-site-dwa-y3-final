@@ -58,3 +58,24 @@ Route::get('services_contact/delete','ServicesContactController@delete');
 Route::get('services_contact/edit/{id}', 'ServicesContactController@edit');
 Route::post('services_contact/save','ServicesContactController@save');
 Route::post('services_contact/update','ServicesContactController@update');
+
+Route::GET('/categoryctr','pageController@showcategorycontroller');
+// cat
+Route::GET('/catvideoctr','pageController@showcatvideocontroller');
+Route::Delete('categoryctr/{id}', 'categoryBackendController@destroy')->name('categoryctr.destroy');
+Route::Delete('catvideoctr/{id}', 'catvideoBackendController@destroy')->name('catvideoctr.destroy');
+Route::Delete('categoryBackControl/{id}','imageController@destroy')->name('image.destroy');
+Route::Delete('catvideoBackControl/{id}','videoController@destroy')->name('video.destroy');
+Route::patch('categoryctr/{id}', 'categoryBackendController@update')->name('categoryctr.update');
+Route::patch('catvideoctr/{id}', 'catvideoBackendController@update')->name('catvideoctr.update');
+Route::resource('/slide', 'slideController');
+
+Route::resource('/categorycontrol','categoryController');
+Route::resource('/catvideocontrol','catvideoController');
+
+Route::resource('/image','imageController');
+
+Route::resource('/video','videoController');
+Route::resource('/categoryBackControl','categoryBackendController');
+Route::resource('/catvideoBackControl','catvideoBackendController');
+

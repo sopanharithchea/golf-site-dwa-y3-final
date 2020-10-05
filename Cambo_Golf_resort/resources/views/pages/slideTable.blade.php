@@ -1,20 +1,13 @@
-<<<<<<< HEAD
-=======
 {{--  @extends('layouts.backend')
 
 @section('admin')
 
 
 @endsection  --}}
->>>>>>> 3c85237cd7d761b0bae5514a8d99f31aea61259c
 @extends('layouts.backend')
 
 @section('admin')
 
-<<<<<<< HEAD
-
- @endsection
-=======
 <div class="container-fluid">
 
         <h2>Slides list </h2>
@@ -222,4 +215,3 @@
     });
 </script>
 @endsection
->>>>>>> 3c85237cd7d761b0bae5514a8d99f31aea61259c
