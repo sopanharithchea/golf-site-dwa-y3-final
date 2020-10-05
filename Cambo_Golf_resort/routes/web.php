@@ -32,4 +32,22 @@ Route::get('/service', function(){return view('pages.service');})->name('service
 Route::get('/contact', function(){return view('pages.contact');})->name('contact');
 Route::get('/features', function(){return view('pages.features');})->name('features');
 Route::get('/slide', function(){return view('pages.slideTable');})->name('slideTable');
-Route::resource('/slide', 'slideController'); 
+Route::GET('/categoryctr','pageController@showcategorycontroller');
+// cat
+Route::GET('/catvideoctr','pageController@showcatvideocontroller');
+Route::Delete('categoryctr/{id}', 'categoryBackendController@destroy')->name('categoryctr.destroy');
+Route::Delete('catvideoctr/{id}', 'catvideoBackendController@destroy')->name('catvideoctr.destroy');
+Route::Delete('categoryBackControl/{id}','imageController@destroy')->name('image.destroy');
+Route::Delete('catvideoBackControl/{id}','videoController@destroy')->name('video.destroy');
+Route::patch('categoryctr/{id}', 'categoryBackendController@update')->name('categoryctr.update');
+Route::patch('catvideoctr/{id}', 'catvideoBackendController@update')->name('catvideoctr.update');
+Route::resource('/slide', 'slideController');
+
+Route::resource('/categorycontrol','categoryController');
+Route::resource('/catvideocontrol','catvideoController');
+
+Route::resource('/image','imageController');
+
+Route::resource('/video','videoController');
+Route::resource('/categoryBackControl','categoryBackendController');
+Route::resource('/catvideoBackControl','catvideoBackendController');
