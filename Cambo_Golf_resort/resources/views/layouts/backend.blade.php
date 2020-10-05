@@ -22,6 +22,8 @@
 
   <script src="{{asset('js/jquery.min.js')}}"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  
+  
 
 </head>
  @auth
@@ -144,13 +146,13 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-          <a class="collapse-item" href="{{url('/services/create')}}">Create</a>
-            <a class="collapse-item" href="{{url('/services/edit')}}">Edit</a>
-            <a class="collapse-item" href="{{url('/services/index')}}">Index</a>
-            <!-- <a class="collapse-item" href="{{url('servicectr')}}">service details</a> -->
-
+          <a class="collapse-item" href="{{url('/services/index')}}">Service</a>
+          <a class="collapse-item" href="{{url('/services_category/index')}}">Service Category</a>
+          <a class="collapse-item" href="{{url('/services_contact/index')}}">Service Contact</a>
+          
           </div>
         </div>
+
       </li>
 
 @if (stripos($_SERVER['REQUEST_URI'],'users'))
@@ -162,7 +164,7 @@
 @endif
         <a class="nav-link">
          <i class="fas fa-users"></i>
-          <span>User Managent</span></a>
+          <span>User Management</span></a>
       </li>
 
 

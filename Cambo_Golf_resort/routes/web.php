@@ -41,12 +41,20 @@ Route::get('services/create','ServicesController@create');
 Route::get('services/delete','ServicesController@delete');
 Route::get('services/edit/{id}', 'ServicesController@edit');
 Route::post('services/save','ServicesController@save');
-Route::post('services/update','ServicesController@save');
+Route::post('services/update','ServicesController@update');
 
 //Services_category
-Route::get('services_category/index', 'ServicesContactController@index');
-Route::get('services_category/create','ServicesContactController@create');
-Route::get('services_category/delete','ServicesContactController@delete');
-Route::get('services_category/edit/{id}', 'ServicesContactController@edit');
-Route::post('services_category/save','ServicesContactController@save');
-Route::post('services_category/update','ServicesContactController@save');
+Route::get('services_category/index', 'ServicesCategoryController@index');
+Route::get('services_category/create','ServicesCategoryController@create');
+Route::get('services_category/delete','ServicesCategoryController@delete');
+Route::get('services_category/edit/{id}', 'ServicesCategoryController@edit');
+Route::post('services_category/save','ServicesCategoryController@save');
+Route::post('services_category/update','ServicesCategoryController@update');
+
+//Services_contact
+Route::get('services_contact/index', 'ServicesContactController@index');
+Route::get('services_contact/create','ServicesContactController@create');
+Route::get('services_contact/delete','ServicesContactController@delete');
+Route::get('services_contact/edit/{id}', 'ServicesContactController@edit');
+Route::post('services_contact/save','ServicesContactController@save');
+Route::post('services_contact/update','ServicesContactController@update');
