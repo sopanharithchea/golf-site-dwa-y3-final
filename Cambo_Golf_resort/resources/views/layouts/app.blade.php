@@ -15,7 +15,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
     <!-- Styles -->
-    {{-- <link rel="stylesheet" href="{{ asset('css/app.css')  }}"> --}}
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')  }}">
     <link rel="stylesheet" href="{{ asset('css/style.css')  }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css')  }}">
@@ -224,4 +223,4 @@
 
 </body>
 
-</html>
+</html>  --}}
