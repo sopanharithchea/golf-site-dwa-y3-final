@@ -28,10 +28,12 @@ Route::get('/reservation', function(){return view('pages.reservation');})->name(
 Route::get('/career', function(){return view('pages.career');})->name('career');
 Route::get('/news', function(){return view('pages.news');})->name('news');
 Route::get('/article', function(){return view('pages.article');})->name('article');
-Route::get('/service', function(){return view('pages.service');})->name('service');
+// Route::get('/service', function(){return view('pages.service');})->name('service');
 Route::get('/contact', function(){return view('pages.contact');})->name('contact');
 Route::get('/features', function(){return view('pages.features');})->name('features');
 Route::get('/slide', function(){return view('pages.slideTable');})->name('slideTable');
+
+Route::get('service', 'ServiceFrontController@service')->name('service');
 
 //Services
 Route::get('services/index', 'ServicesController@index');
