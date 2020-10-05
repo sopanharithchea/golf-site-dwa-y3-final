@@ -14,7 +14,7 @@
                
                <div class="ber_link text-center">
                
-                   <p> <i class="fa fa-angle-double-right"></i> <a href="index.html">Home</a> / <a href="service.html">Services</a>  <i class="fa fa-angle-double-left"></i> </p>
+                   <p> <i class="fa fa-angle-double-right"></i> <a href="{{route('home')}}">Home</a> / <a href="{{route('service')}}">Services</a>  <i class="fa fa-angle-double-left"></i> </p>
                
               </div>
            
@@ -37,65 +37,24 @@
            <h2>services</h2>
            
            <h3 class="sub_titel">We give you the best service</h3>
-       
+
+            @foreach($services as $sr)
            <div class="col-sm-3">
                
                <i class="fa fa-lightbulb-o"></i>
            
-               <h4>Creative Thinking</h4>
+               <h4>{{$sr->title}}</h4>
                
-               <h5>We building creative solutions</h5>
-               
-               <p>In most people's vocabularies, design means veneer. It's interior decorating. It's the fabric of the curtains of the sofa. But to me, nothing could be further from the meaning of design. Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product or service.</p>
+               <p>{{$sr->description}}</p>
                
                <button type="button" class="btn btn-default btn-lg wpm_batton wpm_read_btn">Read more</button>
            
            </div>
-           
-           <div class="col-sm-3">
-               
-               <i class="fa fa-lightbulb-o"></i>
-           
-               <h4>Creative Thinking</h4>
-               
-               <h5>We building creative solutions</h5>
-               
-               <p>In most people's vocabularies, design means veneer. It's interior decorating. It's the fabric of the curtains of the sofa. But to me, nothing could be further from the meaning of design. Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product or service.</p>
-               
-               <button type="button" class="btn btn-default btn-lg wpm_batton wpm_read_btn">Read more</button>
-           
-           </div>
+           @endforeach
            
            
-           <div class="col-sm-3">
-               
-               <i class="fa fa-lightbulb-o"></i>
            
-               <h4>Creative Thinking</h4>
-               
-               <h5>We building creative solutions</h5>
-               
-               <p>In most people's vocabularies, design means veneer. It's interior decorating. It's the fabric of the curtains of the sofa. But to me, nothing could be further from the meaning of design. Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product or service.</p>
-               
-               <button type="button" class="btn btn-default btn-lg wpm_batton wpm_read_btn">Read more</button>
-           
-           </div>
-           
-           
-           <div class="col-sm-3">
-               
-               <i class="fa fa-lightbulb-o"></i>
-           
-               <h4>Creative Thinking</h4>
-               
-               <h5>We building creative solutions</h5>
-               
-               <p>In most people's vocabularies, design means veneer. It's interior decorating. It's the fabric of the curtains of the sofa. But to me, nothing could be further from the meaning of design. Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product or service.</p>
-               
-               <button type="button" class="btn btn-default btn-lg wpm_batton wpm_read_btn">Read more</button>
-               
-           
-           </div>
+
        
        </div>
    
@@ -109,14 +68,16 @@
    <div class="container">
    
        <div class="row">
-       
+
+            @foreach($service_contact as $sc)
            <div class="col-sm-9">
            
-                  <h3>Call us today at <b>+8801599702974</b> or Email us at <a href="#">info@DewThemes.Com</a></h3>
+                  <h3>Call us today at <b>{{$sc->phone}}</b> or Email us at <a href="#">{{$sc->email}}</a></h3>
            
-                   <p>We design and develop the best website's for customers! Order now to get a world class website design.</p>
+                   <p>{{$sc->description}}</p>
            
            </div>
+           @endforeach
            
            <div class="col-sm-3">
            
@@ -141,72 +102,20 @@
            
           <div class="wpm_border center-block"> <i class="fa fa-star-half-o"></i> </div> 
        
-           <div class="col-sm-4 border_bottom">
-           
-               <i class="fa fa-diamond"></i>
-               
-               <div class="bold_border"></div>
-               
-               <h3>HTML5 AND CSS3</h3>
-           
-           </div>
-           
-           <div class="col-sm-4 border_left_right border_bottom">
-           
-               <i class="fa fa-dashcube"></i>
-               
-               <div class="bold_border"></div>
-               
-               <h3>HTML5 AND CSS3</h3>
-           
-           </div>
-           
+            @foreach($service_category as $scate)           
            <div class="col-sm-4 border_bottom">
            
                <i class="fa fa-skyatlas"></i>
                
                <div class="bold_border"></div>
                
-               <h3>HTML5 AND CSS3</h3>
+               <h3>{{$scate->title}}</h3>
            
            </div>
+           @endforeach
        
        </div>
-       
-       
-       <div class="row">
-       
-           <div class="col-sm-4">
-           
-               <i class="fa fa-diamond"></i>
-               
-               <div class="bold_border"></div>
-               
-               <h3>HTML5 AND CSS3</h3>
-           
-           </div>
-           
-           <div class="col-sm-4 border_left_right">
-           
-               <i class="fa fa-dashcube"></i>
-               
-               <div class="bold_border"></div>
-               
-               <h3>HTML5 AND CSS3</h3>
-           
-           </div>
-           
-           <div class="col-sm-4 ">
-           
-               <i class="fa fa-skyatlas"></i>
-               
-               <div class="bold_border"></div>
-               
-               <h3>HTML5 AND CSS3</h3>
-           
-           </div>
-       
-       </div>
+
    
    </div>
 
