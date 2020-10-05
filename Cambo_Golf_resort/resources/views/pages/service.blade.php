@@ -14,7 +14,7 @@
                
                <div class="ber_link text-center">
                
-                   <p> <i class="fa fa-angle-double-right"></i> <a href="{{url('/')}}">Home</a> / <a href="{{url('service')}}">Services</a>  <i class="fa fa-angle-double-left"></i> </p>
+                   <p> <i class="fa fa-angle-double-right"></i> <a href="index.html">Home</a> / <a href="service.html">Services</a>  <i class="fa fa-angle-double-left"></i> </p>
                
               </div>
            
@@ -25,9 +25,10 @@
    </div>   
 
 </section>
+
 <section class="service_area">
 
-<div class="wpm_bg_opacity">
+    <div class="wpm_bg_opacity">
 
       <div class="container">
    
@@ -98,11 +99,11 @@
        
        </div>
    
-   </div>
-
- </div>  
+   </div> 
 
 </section>
+
+
 <section class="call_us_area">
 
    <div class="container">
@@ -128,6 +129,8 @@
    </div>
 
 </section>
+
+
 <section class="wpm_service_area">
 
       <div class="container">

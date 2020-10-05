@@ -15,17 +15,13 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
     <!-- Styles -->
-<<<<<<< HEAD
-    {{-- <link rel="stylesheet" href="{{ asset('css/app.css')  }}"> --}}
-=======
->>>>>>> 3c85237cd7d761b0bae5514a8d99f31aea61259c
+    <link rel="stylesheet" href="{{ asset('css/app.css')  }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')  }}">
     <link rel="stylesheet" href="{{ asset('css/style.css')  }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css')  }}">
-    <link rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.min.css')  }}">
+    <link rel="stylesheet" href="{{ asset('font-awesome/css/font-awesome.min.css')  }}">
 
 </head>
-
 <body>
     <div id="app">
         <section class="wpm_header_top">
@@ -70,7 +66,6 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-
                     <ul class="nav navbar-nav navbar-right wpm_menu">
 
                     <li class="active"><a href="{{ route('home') }}">Home</a></li>
@@ -83,20 +78,9 @@
                             <ul class="dropdown-menu" role="menu">
                             <li><a href="{{ route('about') }}">About us</a></li>
                             <li><a href="{{ route('career') }}">Career Opportunity</a></li>
-                            <li><a href="{{ route('about') }}">About us</a></li>
-                            <li><a href="{{ route('about') }}">About us</a></li>
                             </ul>
                         </li>
-
-<<<<<<< HEAD
-<<<<<<< HEAD
                         <li><a href="{{url('service')}}">Services</a></li>
-=======
-                        <li><a href="{{ route('service') }}">Services</a></li>
->>>>>>> c9346c47b4e257a587f2d5669ef862615dd825ab
-=======
-                        <li><a href="{{ route('service') }}">Services</a></li>
->>>>>>> 3c85237cd7d761b0bae5514a8d99f31aea61259c
                         <li><a href="{{ route('reservation') }}">Reservation</a> </li>
 
 
@@ -152,7 +136,6 @@
         <main class="py-4">
             @yield('content')
         </main>
-    </div>
     <footer class="wpm_footer_area">
 
         <div class="container">
@@ -232,7 +215,10 @@
         </div>
 
     </section>
-
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{asset('js/jquery.min.js')}}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{asset('js/Main-script.min.js')}}"></script>
 </body>
 
-</html>  --}}
+</html>
