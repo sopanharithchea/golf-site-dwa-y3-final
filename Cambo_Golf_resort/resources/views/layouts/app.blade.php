@@ -15,7 +15,10 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
     <!-- Styles -->
+<<<<<<< HEAD
     {{-- <link rel="stylesheet" href="{{ asset('css/app.css')  }}"> --}}
+=======
+>>>>>>> 3c85237cd7d761b0bae5514a8d99f31aea61259c
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')  }}">
     <link rel="stylesheet" href="{{ asset('css/style.css')  }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css')  }}">
@@ -86,10 +89,14 @@
                         </li>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <li><a href="{{url('service')}}">Services</a></li>
 =======
                         <li><a href="{{ route('service') }}">Services</a></li>
 >>>>>>> c9346c47b4e257a587f2d5669ef862615dd825ab
+=======
+                        <li><a href="{{ route('service') }}">Services</a></li>
+>>>>>>> 3c85237cd7d761b0bae5514a8d99f31aea61259c
                         <li><a href="{{ route('reservation') }}">Reservation</a> </li>
 
 
@@ -228,4 +235,4 @@
 
 </body>
 
-</html>
+</html>  --}}
