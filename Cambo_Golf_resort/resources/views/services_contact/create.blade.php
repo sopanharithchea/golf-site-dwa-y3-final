@@ -5,8 +5,8 @@
 <div class="card card-gray">
 	<div class="card-header">
 		<div class="header-block">
-			<p class="title"> Create Company
-				<a href="{{url('services/index')}}"class="btn btn-primary-outline btn-oval btn-sm mx-left">
+			<p class="title"> Create Contact
+				<a href="{{url('services_contact/index')}}"class="btn btn-primary-outline btn-oval btn-sm mx-left">
                     <i class="fa fa-reply"></i> Back
                 </a>
 			</p>
@@ -48,24 +48,34 @@
                         </ul>
                     </div>
                 @endif
-                <form action="{{url('services/save')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{url('services_contact/save')}}" method="POST" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-sm-8">
                                 {{csrf_field()}}
                             <div class="form-group row">
-                                <label for="title" class="col-sm-4">Title<span class="text-danger">*</span></label>
+                                <label for="phone" class="col-sm-4">Phone<span class="text-danger">*</span></label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="title" name="title" 
-                                        value="{{old('title')}}" required autofocus>
+                                    <input type="text" class="form-control" id="phone" name="phone" 
+                                        value="{{old('phone')}}" required autofocus>
                                 </div>
                             </div>
-                            <!--  -->
+
+                            <div class="form-group row">
+                                <label for="email" class="col-sm-4">Email<span class="text-danger">*</span></label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="email" name="email" 
+                                        value="{{old('email')}}" required autofocus>
+                                </div>
+                            </div>
+
                             <div class="form-group row">
                                 <label for="description" class="col-sm-4">Description</label>
                                 <div class="col-sm-8">
                                     <textarea name="description" class="form-control" id="description" cols="30" rows="5"></textarea>
                                 </div>
                             </div>
+                            <!--  -->
+                            
                             
                             <div class="form-group row">
                                 <label class="col-sm-3">&nbsp;</label>
