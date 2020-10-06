@@ -12,11 +12,13 @@ The git repository for Golf Site Dynamic Web Application Year 3 Final Laravel Pr
 
 > ### _Make sure you use your own mysql credentials_
 
-## 4. Run `composer install`
+## 4. Restore database from `Cambo_Golf_resort/database/golfsite-db.sql`
 
-## 5. Run `php artisan key:generate`
+## 5. Run `composer install`
 
-## 6. Run `php artisan serve`
+## 6. Run `php artisan key:generate`
+
+## 7. Run `php artisan serve`
 
 <br />
 
