@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="{{ asset('font-awesome/css/font-awesome.min.css')  }}">
 
 </head>
+
 <body>
     <div id="app">
         <section class="wpm_header_top">
@@ -70,7 +71,7 @@
 
                     <ul class="nav navbar-nav navbar-right wpm_menu">
 
-                    <li class="active"><a href="{{ route('home') }}">Home</a></li>
+                        <li class="active"><a href="{{ route('home') }}">Home</a></li>
 
                         <li role="presentation" class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
@@ -78,8 +79,8 @@
                                 Pages <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ route('about') }}">About us</a></li>
-                            <li><a href="{{ route('career') }}">Career Opportunity</a></li>
+                                <li><a href="{{ route('about') }}">About us</a></li>
+                                <li><a href="{{ route('career') }}">Career Opportunity</a></li>
                             </ul>
                         </li>
                         <li><a href="{{url('service')}}">Services</a></li>
@@ -92,7 +93,7 @@
                                 News <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ route('news') }}">News Page</a></li>
+                                <li><a href="{{ route('news') }}">News Page</a></li>
                                 <li><a href="{{ route('article') }}">News Article</a></li>
                             </ul>
                         </li>
@@ -138,89 +139,89 @@
         <main class="py-4">
             @yield('content')
         </main>
-    <footer class="wpm_footer_area">
+        <footer class="wpm_footer_area">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="row">
+                <div class="row">
 
-                <div class="col-sm-4">
+                    <div class="col-sm-4">
 
-                    <h3>Get Free Consultation</h3>
+                        <h3>Get Free Consultation</h3>
 
-                    <p>Available 27/8</p>
+                        <p>Available 27/8</p>
 
-                    <h4>(888) 000-456-7890</h4>
+                        <h4>(888) 000-456-7890</h4>
 
-                </div>
-
-
-                <div class="col-sm-4">
-
-                    <h3>Message Us Now</h3>
-
-                    <p>Available 27/8</p>
-
-                    <a href="#">info@Html5Load.com</a>
-
-                </div>
+                    </div>
 
 
-                <div class="col-sm-4">
+                    <div class="col-sm-4">
 
-                    <h3>Address Location</h3>
+                        <h3>Message Us Now</h3>
 
-                    <p>2901 Marmora Road, Glassgow, Seattle, WA 98122-1090 Fax: (888) 123-456-7899 </p>
+                        <p>Available 27/8</p>
 
-                    <a href="#">View Map</a>
+                        <a href="#">info@Html5Load.com</a>
 
-                </div>
-
-            </div>
-
-        </div>
-
-    </footer>
+                    </div>
 
 
+                    <div class="col-sm-4">
 
-    <section class="wpm_frooter_ending">
+                        <h3>Address Location</h3>
 
-        <div class="container">
+                        <p>2901 Marmora Road, Glassgow, Seattle, WA 98122-1090 Fax: (888) 123-456-7899 </p>
 
-            <div class="col-sm-6 text-left">
+                        <a href="#">View Map</a>
 
-                <div class="wpm_footer_menu wpm_mobile_center">
-
-                    <a href="home.html">Home</a>
-                    <a href="{{url('service')}}">Services</a>
-                    <a href="blog.html">Baog</a>
-                    <a href="contact.html">Contact Us</a>
+                    </div>
 
                 </div>
 
             </div>
 
-            <div class="col-sm-6 text-right wpm_mobile_center">
+        </footer>
 
-                <p>Copyright &copy; 2009-<script>
-                        document.write(new Date().getFullYear())
-                    </script> <a href="http://www.html5load.com/" target="_blank">Html5Load.com</a></p>
-                <div class="copytext">Design By <a href="http://html5load.com/" target="_blank"
-                        class="copylink">html5load.Com</a></div>
+
+
+        <section class="wpm_frooter_ending">
+
+            <div class="container">
+
+                <div class="col-sm-6 text-left">
+
+                    <div class="wpm_footer_menu wpm_mobile_center">
+
+                        <a href="home.html">Home</a>
+                        <a href="{{url('service')}}">Services</a>
+                        <a href="blog.html">Baog</a>
+                        <a href="contact.html">Contact Us</a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6 text-right wpm_mobile_center">
+
+                    <p>Copyright &copy; 2009-<script>
+                            document.write(new Date().getFullYear())
+                        </script> <a href="http://www.html5load.com/" target="_blank">Html5Load.com</a></p>
+                    <div class="copytext">Design By <a href="http://html5load.com/" target="_blank"
+                            class="copylink">html5load.Com</a></div>
+
+                </div>
+
+
+                <div class="clearfix"></div>
 
             </div>
 
-
-            <div class="clearfix"></div>
-
-        </div>
-
-    </section>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{{asset('js/jquery.min.js')}}"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{{asset('js/Main-script.min.js')}}"></script>
+        </section>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="{{asset('js/jquery.min.js')}}"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{{asset('js/Main-script.min.js')}}"></script>
 </body>
 
-</html>  --}}
+</html> --}}
