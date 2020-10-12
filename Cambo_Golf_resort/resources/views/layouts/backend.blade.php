@@ -81,13 +81,13 @@
                 </div>
             </li>
 
-            @if (stripos($_SERVER['REQUEST_URI'],'aboutctr'))
+            @if (stripos($_SERVER['REQUEST_URI'],'about'))
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item active">
                 @else
             <li class="nav-item">
                 @endif
-                <a class="nav-link collapsed" href="{{url('aboutctr')}}">
+                <a class="nav-link collapsed" href="{{url('about')}}">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>About page</span>
                 </a>
@@ -103,13 +103,13 @@
                     <span>Feature page</span>
                 </a>
             </li>
-            @if (stripos($_SERVER['REQUEST_URI'],'careerctr'))
+            @if (stripos($_SERVER['REQUEST_URI'],'career'))
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item active">
                 @else
             <li class="nav-item">
                 @endif
-                <a class="nav-link collapsed" href="{{asset('/careerctr')}}">
+                <a class="nav-link collapsed" href="{{url('/career')}}">
                     <i class="fas fa-briefcase"></i>
                     <span>Career Opportunity</span>
                 </a>

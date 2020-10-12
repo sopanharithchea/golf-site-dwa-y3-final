@@ -79,8 +79,8 @@
                                 Pages <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ route('about') }}">About us</a></li>
-                                <li><a href="{{ route('career') }}">Career Opportunity</a></li>
+                                <li><a href="{{ route('about_us') }}">About us</a></li>
+                                <li><a href="{{ route('career_opportunity') }}">Career Opportunity</a></li>
                             </ul>
                         </li>
                         <li><a href="{{url('service')}}">Services</a></li>

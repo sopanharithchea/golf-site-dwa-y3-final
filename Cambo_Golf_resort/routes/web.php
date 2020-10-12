@@ -34,6 +34,8 @@ Route::get('/features', function(){return view('pages.features');})->name('featu
 Route::get('/slide', function(){return view('pages.slideTable');})->name('slideTable');
 
 Route::get('service', 'ServiceFrontController@service')->name('service');
+Route::get('about_us', 'AboutFrontController@about')->name('about_us');
+Route::get('career_opportunity', 'CareerFrontController@career')->name('career_opportunity');
 
 //Services
 Route::get('services/index', 'ServicesController@index');
@@ -69,6 +71,9 @@ Route::Delete('catvideoBackControl/{id}','videoController@destroy')->name('video
 Route::patch('categoryctr/{id}', 'categoryBackendController@update')->name('categoryctr.update');
 Route::patch('catvideoctr/{id}', 'catvideoBackendController@update')->name('catvideoctr.update');
 Route::resource('/slide', 'slideController');
+
+Route::resource('/about', 'AboutController');
+Route::resource('/career', 'CareerController');
 
 Route::resource('/categorycontrol','categoryController');
 Route::resource('/catvideocontrol','catvideoController');
