@@ -72,32 +72,10 @@
                     <ul class="nav navbar-nav navbar-right wpm_menu">
 
                         <li class="active"><a href="{{ route('home') }}">Home</a></li>
-
-                        <li role="presentation" class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                aria-expanded="false">
-                                Pages <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ route('about_us') }}">About us</a></li>
-                                <li><a href="{{ route('career_opportunity') }}">Career Opportunity</a></li>
-                            </ul>
-                        </li>
                         <li><a href="{{url('service')}}">Services</a></li>
                         <li><a href="{{ route('reservation') }}">Reservation</a> </li>
-
-
-                        <li role="presentation" class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                aria-expanded="false">
-                                News <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ route('news') }}">News Page</a></li>
-                                <li><a href="{{ route('article') }}">News Article</a></li>
-                            </ul>
-                        </li>
-
+                        <li><a href="{{ route('about_us') }}">About us</a></li>
+                        <li><a href="{{ route('career_opportunity') }}">Career Opportunity</a></li>
 
                         <li><a href="{{route('contact')}}">Contact us</a> </li>
 
