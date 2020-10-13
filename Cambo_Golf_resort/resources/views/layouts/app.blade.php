@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Cambodia Golf Resort') }}</title>
+    <title>{{ config('app.name', 'CamboGolf') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -72,33 +72,10 @@
                     <ul class="nav navbar-nav navbar-right wpm_menu">
 
                         <li class="active"><a href="{{ route('home') }}">Home</a></li>
-
-                        <li role="presentation" class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                aria-expanded="false">
-                                Pages <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ route('about_us') }}">About us</a></li>
-                                <li><a href="{{ route('career_opportunity') }}">Career Opportunity</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="{{ route('about_us') }}">About us</a></li>
+                        <li><a href="{{ route('career_opportunity') }}">Career Opportunity</a></li>
                         <li><a href="{{url('service')}}">Services</a></li>
                         <li><a href="{{ route('reservation') }}">Reservation</a> </li>
-
-
-                        <li role="presentation" class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                aria-expanded="false">
-                                News <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ route('news') }}">News Page</a></li>
-                                <li><a href="{{ route('article') }}">News Article</a></li>
-                            </ul>
-                        </li>
-
-
                         <li><a href="{{route('contact')}}">Contact us</a> </li>
 
                         <!-- Authentication Links -->
@@ -173,7 +150,9 @@
 
                         <p>55 180 Phnom Penh, 12211 Phnom Penh </p>
 
-                        <a href="https://www.google.com/maps/place/University+of+Puthisastra/@11.5627601,104.9207701,18.75z/data=!4m5!3m4!1s0x3109513ed775f479:0xcac6753bebe2e9d2!8m2!3d11.562662!4d104.9207244">View Map</a>
+                        <a
+                            href="https://www.google.com/maps/place/University+of+Puthisastra/@11.5627601,104.9207701,18.75z/data=!4m5!3m4!1s0x3109513ed775f479:0xcac6753bebe2e9d2!8m2!3d11.562662!4d104.9207244">View
+                            Map</a>
 
                     </div>
 
@@ -206,7 +185,8 @@
 
                     <p>Copyright &copy; 2009-<script>
                             document.write(new Date().getFullYear())
-                        </script> <a href="https://www.golfdigest.com/golf-news-tours" target="_blank">Golfworld.com</a></p>
+                        </script> <a href="https://www.golfdigest.com/golf-news-tours" target="_blank">Golfworld.com</a>
+                    </p>
                     <div class="copytext">Design By <a href="http://html5load.com/" target="_blank"
                             class="copylink">html5load.Com</a></div>
 

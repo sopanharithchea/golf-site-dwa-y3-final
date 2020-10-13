@@ -9,36 +9,21 @@
         <!-- Wrapper for slides -->
 
         <div class="carousel-inner" role="listbox">
-            @foreach($slide as $item)
-            <div class="item">
-                <img src="{{asset('/img/slideImage/'.$item->imgname)}}" alt="{{$item->desc}}">
-                <div class="carousel-caption tp-caption">
-                    <h3>{$item->maintext}}</h3>
-                </div>
-            </div>
-            @endforeach
-
-            {{-- <div class="item active">
+            <div class="item active">
                 <img src="images/slider/01.jpg" alt="...">
                 <div class="carousel-caption tp-caption">
                     <h3>We make awesome things</h3>
                 </div>
             </div>
-
+            @foreach($slide as $item)
             <div class="item">
-                <img src="images/slider/02.jpg" alt="...">
+                <img style="max-height: 500px; object-fit: fill" src="{{asset('/img/slideImage/'.$item->imgname)}}"
+                    alt="{{$item->desc}}">
                 <div class="carousel-caption tp-caption">
-                    <h3>We are very clean</h3>
+                    <h3>{{$item->maintext}}</h3>
                 </div>
             </div>
-
-            <div class="item">
-                <img src="images/slider/03.jpg" alt="...">
-                <div class="carousel-caption tp-caption">
-                    <h3>Fully responsive website</h3>
-                </div>
-            </div> --}}
-
+            @endforeach
         </div>
 
         <!-- Controls -->
