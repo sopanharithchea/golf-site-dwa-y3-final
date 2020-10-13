@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 06, 2020 at 10:40 PM
+-- Generation Time: Oct 13, 2020 at 11:48 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
@@ -13,6 +13,32 @@ SET time_zone = "+00:00";
 --
 -- Database: `golfresort`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `about_us`
+--
+
+CREATE TABLE `about_us` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `position` varchar(100) NOT NULL,
+  `description` varchar(200) NOT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `active` tinyint(4) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `about_us`
+--
+
+INSERT INTO `about_us` (`id`, `name`, `position`, `description`, `updated_at`, `created_at`, `active`) VALUES
+(2, 'Robat Jacobson', 'Founder and Manager', 'Practice Areas: Corporate and Securities Commercial Lending, Real Estate', '2020-10-12 00:07:40', '2020-10-12 00:07:40', 1),
+(3, 'Marcos Zoom', 'Founder and Manager', 'Practice Areas: Corporate and Securities Commercial Lending, Real Estate', '2020-10-12 00:07:57', '2020-10-12 00:07:57', 1),
+(4, 'Alana Morkoni', 'Founder and Manager', 'Practice Areas: Corporate and Securities Commercial Lending, Real Estate', '2020-10-12 00:08:13', '2020-10-12 00:08:13', 1),
+(5, 'Kiley ferry', 'Founder and Manager', 'Practice Areas: Corporate and Securities Commercial Lending, Real Estate', '2020-10-12 00:08:29', '2020-10-12 00:08:29', 1);
 
 -- --------------------------------------------------------
 
@@ -37,6 +63,35 @@ INSERT INTO `career` (`id`, `title`, `content`, `public`, `created_at`, `updated
 (1, 'Position: Sale & Marketing Officer', '<table style=\"width:100%\">\r\n	<tbody>\r\n		<tr>\r\n			<td>\r\n			<div class=\"layoutmanager\">&nbsp;</div>\r\n\r\n			<div class=\"layoutmanager\">&nbsp;</div>\r\n\r\n			<h1><span style=\"color:#e74c3c\">Position: Sale &amp; Marketing Officer</span></h1>\r\n\r\n			<p>Posted on June 13th, 2019</p>\r\n\r\n			<p>Application deadline June 30th, 2019</p>\r\n\r\n			<p>&nbsp;</p>\r\n\r\n			<p><strong>ROLES AND RESPONSIBILITIES</strong></p>\r\n\r\n			<ul>\r\n				<li>Preparing, planning and project managing the publication of all publicity material to maximize brand promotion.</li>\r\n				<li>Creating marketing campaigns and leading the event.</li>\r\n				<li>Creating and developing new innovative ways to communicate the company message to their existing customers.</li>\r\n				<li>Contributing to the annual sales and marketing plan.</li>\r\n				<li>Planning and project managing marketing events and evaluating their success.</li>\r\n				<li>Evaluating the effectiveness of all marketing activity.</li>\r\n				<li>Developing and implementing an internal marketing program.</li>\r\n				<li>Supporting the marketing manager in day to day marketing activities.</li>\r\n				<li>Plan, develop and deliver campaigns as agreed within timescales.</li>\r\n			</ul>\r\n\r\n			<p><strong>REQUIREMENT</strong></p>\r\n\r\n			<ul>\r\n				<li>Bachelor Degree in field of Business Administration or related BBA</li>\r\n				<li>3 years&rsquo; experience with Real Estate sector</li>\r\n				<li>Strong and confident communicator both Khmer and English</li>\r\n				<li>Dynamic and result based</li>\r\n			</ul>\r\n\r\n			<p>&nbsp;</p>\r\n\r\n			<p>&nbsp;</p>\r\n\r\n			<p>Interested candidates, please submit your Cover Letter &amp; CVs with salary expectation to the following email or address:</p>\r\n\r\n			<p><strong>*Phone: 017 738 574, 093 246 767</strong></p>\r\n\r\n			<p><strong>*Email:</strong><a href=\"mailto:hr@vattanacproperties.com\">hr@vattanacproperties.com</a></p>\r\n\r\n			<p><strong>*Address:</strong>Vattanac Capital Tower &ndash; Level 8, # 66, Preah Monivong Blvd, Sangkat Wat</p>\r\n\r\n			<p>Phnom, Khan Daun Penh, Phnom Penh, Cambodia.</p>\r\n\r\n			<p><strong>*Website:</strong><a href=\"http://www.vattanaccapital.com/\">www.vattanaccapital.com</a></p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>', 1, '2019-08-01 00:07:16', '2019-08-01 00:07:26'),
 (2, 'Position: Training Supervisor', '<table style=\"width:100%\">\r\n	<tbody>\r\n		<tr>\r\n			<td>\r\n			<div class=\"layoutmanager\">\r\n			<h1><span style=\"color:#2980b9\">Position: Training Supervisor</span></h1>\r\n\r\n			<p>Posted on June 12th, 2019</p>\r\n\r\n			<p>Application deadline June 30th, 2019</p>\r\n\r\n			<p>&nbsp;</p>\r\n\r\n			<p><strong>ROLES AND RESPONSIBILITIES</strong></p>\r\n\r\n			<ul>\r\n				<li>Identify capabilities developing function to support business performance.</li>\r\n				<li>Conduct and analyst TNA</li>\r\n				<li>Organize training and budget plan</li>\r\n				<li>Prepare, lead, training courses</li>\r\n				<li>Coordinate and deploy the learning plan for staff.</li>\r\n				<li>Measure impact/efficiency of learning solution</li>\r\n				<li>Ensure all training course are implemented as schedule agreed;</li>\r\n				<li>Sourcing the training courses and providers and reporting as well as requesting it to superiors,</li>\r\n				<li>Develop and maintain employee training record and report.</li>\r\n				<li>Work closely with internal and external training team to facilitate all training courses</li>\r\n				<li>Ensure a strong professional relationship with all department with the company.</li>\r\n				<li>Other tasks assigned by Manage&nbsp;<br />\r\n				<strong>REQUIREMENT</strong></li>\r\n				<li>Bachelor Degree of Management or related degree</li>\r\n				<li>At least 5 years working experience in Training Function and another both soft skill and hard skill</li>\r\n				<li>Knowledge of Ms. Word, Excel and Power Point,</li>\r\n				<li>Fluent of English both writing and speaking</li>\r\n				<li>Good at communication, interpersonal, presentation &amp; analytical skills,</li>\r\n			</ul>\r\n\r\n			<p>&nbsp;</p>\r\n\r\n			<p>&nbsp;</p>\r\n\r\n			<p>Interested candidates, please submit your Cover Letter &amp; CVs with salary expectation to the following email or address:</p>\r\n\r\n			<p><strong>*Phone: 017 738 574, 081 802 481</strong></p>\r\n\r\n			<p><strong>*Email:</strong><a href=\"mailto:hr@vattanacproperties.com\">hr@vattanacproperties.com</a></p>\r\n\r\n			<p><strong>*Address:</strong>Vattanac Capital Tower &ndash; Level 8, # 66, Preah Monivong Blvd, Sangkat Wat</p>\r\n\r\n			<p>Phnom, Khan Daun Penh, Phnom Penh, Cambodia.</p>\r\n\r\n			<p><strong>*Website:</strong><a href=\"http://www.vattanaccapital.com/\">www.vattanaccapital.com</a></p>\r\n			</div>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>', 1, '2019-08-01 00:09:28', '2019-08-01 00:09:34'),
 (3, 'Position: Training Supervisor', '<table style=\"width:100%\">\r\n	<tbody>\r\n		<tr>\r\n			<td>\r\n			<div class=\"layoutmanager\">\r\n			<h1><span style=\"color:#2980b9\">Position: Training Supervisor</span></h1>\r\n\r\n			<p>Posted on June 12th, 2019</p>\r\n\r\n			<p>Application deadline June 30th, 2019</p>\r\n\r\n			<p>&nbsp;</p>\r\n\r\n			<p><strong>ROLES AND RESPONSIBILITIES</strong></p>\r\n\r\n			<ul>\r\n				<li>Identify capabilities developing function to support business performance.</li>\r\n				<li>Conduct and analyst TNA</li>\r\n				<li>Organize training and budget plan</li>\r\n				<li>Prepare, lead, training courses</li>\r\n				<li>Coordinate and deploy the learning plan for staff.</li>\r\n				<li>Measure impact/efficiency of learning solution</li>\r\n				<li>Ensure all training course are implemented as schedule agreed;</li>\r\n				<li>Sourcing the training courses and providers and reporting as well as requesting it to superiors,</li>\r\n				<li>Develop and maintain employee training record and report.</li>\r\n				<li>Work closely with internal and external training team to facilitate all training courses</li>\r\n				<li>Ensure a strong professional relationship with all department with the company.</li>\r\n				<li>Other tasks assigned by Manage&nbsp;<br />\r\n				<strong>REQUIREMENT</strong></li>\r\n				<li>Bachelor Degree of Management or related degree</li>\r\n				<li>At least 5 years working experience in Training Function and another both soft skill and hard skill</li>\r\n				<li>Knowledge of Ms. Word, Excel and Power Point,</li>\r\n				<li>Fluent of English both writing and speaking</li>\r\n				<li>Good at communication, interpersonal, presentation &amp; analytical skills,</li>\r\n			</ul>\r\n\r\n			<p>&nbsp;</p>\r\n\r\n			<p>&nbsp;</p>\r\n\r\n			<p>Interested candidates, please submit your Cover Letter &amp; CVs with salary expectation to the following email or address:</p>\r\n\r\n			<p><strong>*Phone: 017 738 574, 081 802 481</strong></p>\r\n\r\n			<p><strong>*Email:</strong><a href=\"mailto:hr@vattanacproperties.com\">hr@vattanacproperties.com</a></p>\r\n\r\n			<p><strong>*Address:</strong>Vattanac Capital Tower &ndash; Level 8, # 66, Preah Monivong Blvd, Sangkat Wat</p>\r\n\r\n			<p>Phnom, Khan Daun Penh, Phnom Penh, Cambodia.</p>\r\n\r\n			<p><strong>*Website:</strong><a href=\"http://www.vattanaccapital.com/\">www.vattanaccapital.com</a></p>\r\n			</div>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>', 1, '2019-08-01 00:17:08', '2019-08-01 00:17:15');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `careers`
+--
+
+CREATE TABLE `careers` (
+  `id` int(11) NOT NULL,
+  `sector` varchar(100) NOT NULL,
+  `position` varchar(100) NOT NULL,
+  `open_post` int(11) NOT NULL,
+  `location` varchar(200) NOT NULL,
+  `deadline` varchar(100) NOT NULL,
+  `description` varchar(2000) NOT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `active` tinyint(4) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `careers`
+--
+
+INSERT INTO `careers` (`id`, `sector`, `position`, `open_post`, `location`, `deadline`, `description`, `updated_at`, `created_at`, `active`) VALUES
+(1, 'Marketing Communications', 'Events Officer', 1, 'Phnom Penh', 'October 31, 2020', 'Degree in Communication- Willing to travel', '2020-10-12 00:40:43', '2020-10-12 00:40:43', 1),
+(2, 'Database/Data Engineering/Data Analytics', 'Junior Data Analyst', 1, 'Phnom Penh', 'October 20, 2020', 'Bachelor’s degree in statistics, mathematics, economics, computer science, engineering', '2020-10-12 00:42:37', '2020-10-12 00:42:37', 1),
+(3, 'Database/Data Engineering/Data Analytics', 'Senior Data Engineer', 1, 'Phnom Penh', 'October 31, 2020', '3 years of working experience working in a data engineering', '2020-10-12 00:43:15', '2020-10-12 00:43:15', 1),
+(4, 'Programmers/Information Technology', 'Junior Application Developer', 1, 'Phnom Penh', 'October 31, 2020', 'Fresh graduate up to 1 year of relevant working experience', '2020-10-12 00:43:56', '2020-10-12 00:43:56', 1);
 
 -- --------------------------------------------------------
 
@@ -232,6 +287,75 @@ INSERT INTO `reservation` (`id`, `name`, `email`, `phone`, `member`, `start_date
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `services`
+--
+
+CREATE TABLE `services` (
+  `id` int(11) NOT NULL,
+  `title` varchar(100) DEFAULT NULL,
+  `description` varchar(100) DEFAULT NULL,
+  `active` int(11) NOT NULL DEFAULT '1',
+  `created_at` date DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `services`
+--
+
+INSERT INTO `services` (`id`, `title`, `description`, `active`, `created_at`) VALUES
+(5, 'Hello', 'Testing DEscriotion', 1, NULL),
+(6, 'Hello1', 'Description1\r\n', 1, NULL),
+(7, 'Hello2', 'Description3', 1, NULL),
+(8, 'Hello3', 'Desctiion5', 1, NULL),
+(9, 'Hello4', 'Description555\r\n', 1, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `services_category`
+--
+
+CREATE TABLE `services_category` (
+  `id` int(11) NOT NULL,
+  `title` varchar(100) DEFAULT NULL,
+  `active` int(11) NOT NULL DEFAULT '1',
+  `created_at` int(11) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `services_category`
+--
+
+INSERT INTO `services_category` (`id`, `title`, `active`, `created_at`) VALUES
+(4, 'HEllo', 1, NULL),
+(5, 'Hi', 1, NULL),
+(6, 'Doing?', 1, NULL),
+(7, 'I love you', 1, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `services_contact`
+--
+
+CREATE TABLE `services_contact` (
+  `id` int(11) NOT NULL,
+  `phone` varchar(50) DEFAULT NULL,
+  `email` varchar(60) DEFAULT NULL,
+  `active` int(11) NOT NULL DEFAULT '1',
+  `description` varchar(100) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `services_contact`
+--
+
+INSERT INTO `services_contact` (`id`, `phone`, `email`, `active`, `description`) VALUES
+(3, '012 345 282', 'touchteng@gmail.com', 1, 'Testing');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `slides`
 --
 
@@ -307,7 +431,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `avatar`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `role`) VALUES
 (1, 'Dara', 'dara@yahoo.com', 'user.jpg', NULL, '$2y$10$cdh1L0VXtf0s4aCT7qTHCemAQJxuRx2J1rF4Xv1L0PlBpapH8QKkm', 'Px0jTviHQM', NULL, '2019-08-08 03:04:43', 'user'),
-(2, 'Administrator', 'manager@example.com', 'CheckBox.jpg', NULL, '$2y$10$zHgA0LDA/kCnsk/ayKXdu.1mnz6E.32X2Et1GzCOh0d7PHf40WS8u', 'ozEIqFhA2FcOhq0EtUQujCx6PscZLHdu6Un44ebMzXXhpxVHrfdcufTJSeVS', NULL, '2019-08-15 23:39:30', 'administrator'),
+(2, 'Administrator', 'manager@example.com', 'CheckBox.jpg', NULL, '$2y$10$zHgA0LDA/kCnsk/ayKXdu.1mnz6E.32X2Et1GzCOh0d7PHf40WS8u', 'uvZqG9zSu8P4GEPWGlwkQZCEzBue15c2pM3Yl955ltgxUxM5btwyHjzuE6GP', NULL, '2019-08-15 23:39:30', 'administrator'),
 (11, 'rothana', 'ammrothana123@gmail.com', 'user.jpg', NULL, '$2y$10$4g5iUz43MLUxZcTea433Z.IlTuIjd21OCDlYKdriKOXJUhlqSWpDq', NULL, '2019-08-08 19:36:46', '2019-08-08 19:36:46', 'user'),
 (13, 'rothana', 'ammrothana007@gmail.com', 'user.jpg', NULL, '$2y$10$h12S2SpBVzjVg3EkGSElf.JDdlla9nw00xz62aLo3FVrl2Mkuv6lG', NULL, '2019-08-08 19:37:10', '2019-08-08 19:37:10', 'user');
 
@@ -342,9 +466,21 @@ INSERT INTO `videos` (`id`, `video`, `catvideo_id`, `created_at`, `updated_at`) 
 --
 
 --
+-- Indexes for table `about_us`
+--
+ALTER TABLE `about_us`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `career`
 --
 ALTER TABLE `career`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `careers`
+--
+ALTER TABLE `careers`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -391,6 +527,24 @@ ALTER TABLE `reservation`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `services`
+--
+ALTER TABLE `services`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `services_category`
+--
+ALTER TABLE `services_category`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `services_contact`
+--
+ALTER TABLE `services_contact`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `slides`
 --
 ALTER TABLE `slides`
@@ -421,10 +575,22 @@ ALTER TABLE `videos`
 --
 
 --
+-- AUTO_INCREMENT for table `about_us`
+--
+ALTER TABLE `about_us`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `career`
 --
 ALTER TABLE `career`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `careers`
+--
+ALTER TABLE `careers`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -461,6 +627,24 @@ ALTER TABLE `migrations`
 --
 ALTER TABLE `reservation`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `services`
+--
+ALTER TABLE `services`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `services_category`
+--
+ALTER TABLE `services_category`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `services_contact`
+--
+ALTER TABLE `services_contact`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `slides`
