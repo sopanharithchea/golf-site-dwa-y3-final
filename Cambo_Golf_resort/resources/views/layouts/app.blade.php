@@ -43,8 +43,8 @@
 
 
                 <div class="col-sm-7 wpm_mobile_center text-right">
-                    <i class="fa fa-phone"></i> Call Us : +880 111-111-111 &nbsp; &nbsp; <a href="#"><i
-                            class="fa fa-envelope"></i> Email : info@Html5Load.com</a>
+                    <i class="fa fa-phone"></i> Call Us : +855 10 345 543 &nbsp; &nbsp; <a href="#"><i
+                            class="fa fa-envelope"></i> Email : info@golfworld.com</a>
                 </div>
 
 
@@ -72,10 +72,32 @@
                     <ul class="nav navbar-nav navbar-right wpm_menu">
 
                         <li class="active"><a href="{{ route('home') }}">Home</a></li>
+
+                        <li role="presentation" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">
+                                Pages <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ route('about_us') }}">About us</a></li>
+                                <li><a href="{{ route('career_opportunity') }}">Career Opportunity</a></li>
+                            </ul>
+                        </li>
                         <li><a href="{{url('service')}}">Services</a></li>
                         <li><a href="{{ route('reservation') }}">Reservation</a> </li>
-                        <li><a href="{{ route('about_us') }}">About us</a></li>
-                        <li><a href="{{ route('career_opportunity') }}">Career Opportunity</a></li>
+
+
+                        <li role="presentation" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">
+                                News <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ route('news') }}">News Page</a></li>
+                                <li><a href="{{ route('article') }}">News Article</a></li>
+                            </ul>
+                        </li>
+
 
                         <li><a href="{{route('contact')}}">Contact us</a> </li>
 
@@ -129,7 +151,7 @@
 
                         <p>Available 27/8</p>
 
-                        <h4>(888) 000-456-7890</h4>
+                        <h4>(855) 10-345-543</h4>
 
                     </div>
 
@@ -140,7 +162,7 @@
 
                         <p>Available 27/8</p>
 
-                        <a href="#">info@Html5Load.com</a>
+                        <a href="#">info@golfworld.com</a>
 
                     </div>
 
@@ -149,9 +171,9 @@
 
                         <h3>Address Location</h3>
 
-                        <p>2901 Marmora Road, Glassgow, Seattle, WA 98122-1090 Fax: (888) 123-456-7899 </p>
+                        <p>55 180 Phnom Penh, 12211 Phnom Penh </p>
 
-                        <a href="#">View Map</a>
+                        <a href="https://www.google.com/maps/place/University+of+Puthisastra/@11.5627601,104.9207701,18.75z/data=!4m5!3m4!1s0x3109513ed775f479:0xcac6753bebe2e9d2!8m2!3d11.562662!4d104.9207244">View Map</a>
 
                     </div>
 
@@ -171,10 +193,10 @@
 
                     <div class="wpm_footer_menu wpm_mobile_center">
 
-                        <a href="home.html">Home</a>
+                        <a href="{{url('home')}}">Home</a>
                         <a href="{{url('service')}}">Services</a>
-                        <a href="blog.html">Baog</a>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="{{url('reservation')}}">Reservation</a>
+                        <a href="{{url('career_opportunity')}}">Career Opportunity</a>
 
                     </div>
 
@@ -184,7 +206,7 @@
 
                     <p>Copyright &copy; 2009-<script>
                             document.write(new Date().getFullYear())
-                        </script> <a href="http://www.html5load.com/" target="_blank">Html5Load.com</a></p>
+                        </script> <a href="https://www.golfdigest.com/golf-news-tours" target="_blank">Golfworld.com</a></p>
                     <div class="copytext">Design By <a href="http://html5load.com/" target="_blank"
                             class="copylink">html5load.Com</a></div>
 

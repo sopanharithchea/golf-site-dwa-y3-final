@@ -60,8 +60,26 @@
                     <i class="fas fa-list-ul"></i>
                     <span>Slide Control</span></a>
             </li>
+                
+            @if (stripos($_SERVER['REQUEST_URI'],'reservation/pending'))
+            <li class="nav-item active">
+                @else
+            <li class="nav-item">
+                @endif
+                <a class="nav-link" href="{{url('reservation/pending')}}">
+                <i class="fa fa-spinner"></i>
+                    <span>Pending Reservation</span></a>
+            </li>  
 
-
+            @if (stripos($_SERVER['REQUEST_URI'],'reservation/accepted'))
+            <li class="nav-item active">
+                @else
+            <li class="nav-item">
+                @endif
+                <a class="nav-link" href="{{url('reservation/accepted')}}">
+                <i class="fa fa-cloud"></i>
+                    <span>Reservation</span></a>
+            </li>  
             <!-- Nav Item - Pages Collapse Menu -->
             @if (stripos($_SERVER['REQUEST_URI'],'customer'))
             <li class="nav-item active">

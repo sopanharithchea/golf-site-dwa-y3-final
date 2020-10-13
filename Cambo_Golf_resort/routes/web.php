@@ -100,3 +100,8 @@ Route::resource('/image', 'imageController');
 Route::resource('/video', 'videoController');
 Route::resource('/categoryBackControl', 'categoryBackendController');
 Route::resource('/catvideoBackControl', 'catvideoBackendController');
+
+Route::post('reservation/save', 'ReservationController@save');
+Route::get('reservation/accepted', 'ReservationController@accepted');
+Route::get('reservation/pending', 'ReservationController@pending');
+Route::get('reservation/accept', 'ReservationController@accept');
