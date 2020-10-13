@@ -2,16 +2,23 @@
 
 @section('content')
 <section class="wpm_slider_area">
-
-
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
 
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
 
-            <div class="item active">
+        <div class="carousel-inner" role="listbox">
+            @foreach($slide as $item)
+            <div class="item">
+                <img src="{{asset('/img/slideImage/'.$item->imgname)}}" alt="{{$item->desc}}">
+                <div class="carousel-caption tp-caption">
+                    <h3>{$item->maintext}}</h3>
+                </div>
+            </div>
+            @endforeach
+
+            {{-- <div class="item active">
                 <img src="images/slider/01.jpg" alt="...">
                 <div class="carousel-caption tp-caption">
                     <h3>We make awesome things</h3>
@@ -30,7 +37,7 @@
                 <div class="carousel-caption tp-caption">
                     <h3>Fully responsive website</h3>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
 
@@ -688,17 +695,17 @@
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('status') }}
-                    </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
+<div class="card-body">
+    @if (session('status'))
+    <div class="alert alert-success" role="alert">
+        {{ session('status') }}
     </div>
+    @endif
+
+    {{ __('You are logged in!') }}
+</div>
+</div>
+</div>
+</div>
 </div> --}}
 @endsection

@@ -38,8 +38,9 @@ public function create()
 public function store(Request $request)
 {
     $slide = new Slide();
-    $slide->maintext = $request->input('maintext');
-    $slide->desc = $request->input('desc');
+    $slide->name = $request->input('name');
+    $slide->position = $request->input('position');
+    $slide->description = $request->input('description');
 
     if($request->hasfile('imgname')){
         $file = $request->file('imgname');
